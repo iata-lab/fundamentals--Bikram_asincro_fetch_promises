@@ -23,3 +23,6 @@ const nombreObjeto = {};
 function getUsers(Array) {
   console.log(Array);
 }
+
+
+// 5
