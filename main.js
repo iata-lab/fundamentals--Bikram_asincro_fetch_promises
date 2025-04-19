@@ -19,10 +19,17 @@ axios
 
 const nombreObjeto = {};
 
-//4
+//4 and 6
 function getUsers(Array) {
-  console.log(Array);
+  const userList = document.getElementById('userList');
+  userList.innerHTML = ''; // Clear previous content
+  
+  Array.forEach(user => {
+    const userElement = document.createElement('p');
+    userElement.textContent = user.name;
+    userList.appendChild(userElement);
+  });
 }
 
-
 // 5
+document.getElementById('showUsers').addEventListener('click', () => getUsers(users));
